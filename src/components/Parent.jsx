@@ -9,7 +9,7 @@ const Parent = () => {
     gold: 0,
     silver: 0,
     bronze: 0,
-    id: Date.now()+1
+    id: Date.now()
   });
 
   const findCountry = countries.find((c) => c.country === formData.country);
@@ -56,8 +56,10 @@ const Parent = () => {
       gold: 0,
       silver: 0,
       bronze: 0,
+      id: Date.now(),
     });
   };
+  console.log(countries);
   return (
     <main>
       <header>
@@ -108,7 +110,7 @@ const Parent = () => {
           업데이트
         </button>
       </form>
-      <List countries={countries} setCountrie={setCountries} />
+      <List countries={countries} setCountries={setCountries} />
     </main>
   );
 };
