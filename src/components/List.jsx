@@ -27,7 +27,7 @@ const List = ({ countries, setCountries }) => {
                   <button
                     onClick={() => {
                       const filteredCountry = countries.filter(
-                        (c) => c !== country
+                        (c) => c.id !== country.id
                       );
                       setCountries(filteredCountry);
                     }}

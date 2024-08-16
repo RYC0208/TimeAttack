@@ -9,6 +9,7 @@ const Parent = () => {
     gold: 0,
     silver: 0,
     bronze: 0,
+    id: Date.now()+1
   });
 
   const findCountry = countries.find((c) => c.country === formData.country);
@@ -57,7 +58,6 @@ const Parent = () => {
       bronze: 0,
     });
   };
-
   return (
     <main>
       <header>
